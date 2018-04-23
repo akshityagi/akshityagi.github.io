@@ -4,8 +4,18 @@ body{
 	font-family: 'Kanit';
 	width: 100vw;
 	overflow-x: hidden;
+	color: #000;
+
+	@include mobile {
+		color: #fff;
+	}
+
 	p {
 		color: #80828A;
+
+		@include mobile {
+			color: #ddd;
+		}
 	}
 	a {
 		color: #80828A;
@@ -13,8 +23,20 @@ body{
 		&:hover{
 			text-decoration: none;
 			transition: all 0.2s ease-in-out;
-			color: black;
+			color: #000;
+
+			@include mobile {
+				color: #fff;
+			}
 		}
+
+		@include mobile {
+			color: #ddd;
+		}
+	}
+
+	@include mobile {
+		background: #000;
 	}
 }
 
@@ -26,7 +48,12 @@ html {
 
 ::selection {
 	background: #000;
-	color: #fff;	
+	color: #fff;
+
+	@include mobile {
+		color: #000;
+		background: #fff;
+	}
 }
 
 
@@ -41,6 +68,10 @@ html {
 			text-decoration: none;
 			transition: transform 0.2s ease-in-out;
 			color: black;
+
+			@include mobile {
+				color: #fff;
+			}
 
 			&::before {
 				transform: scaleX(1);
@@ -200,5 +231,11 @@ h5 {
 		font-size: 4rem;
 		text-transform: uppercase;
 		color: #000;
+		width: 100%;
+		display: block;
+
+		@include mobile {
+			color: #fff;
+		}
 	}
 }
