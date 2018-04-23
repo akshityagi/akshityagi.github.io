@@ -1,0 +1,204 @@
+body {
+  font-family: 'Kanit';
+  width: 100vw;
+  overflow-x: hidden; }
+  body p {
+    color: #80828A; }
+  body a {
+    color: #80828A; }
+    body a:hover {
+      text-decoration: none;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      color: black; }
+
+@media (max-width: 767px) {
+  html {
+    font-size: 12px; } }
+
+::-moz-selection {
+  background: #000;
+  color: #fff; }
+
+::selection {
+  background: #000;
+  color: #fff; }
+
+.mail {
+  /*a::after {
+	  content: '';
+	  position: absolute;
+	  left: 0em;
+	  top: 0.5rem;
+	  border-bottom: 3px solid black;
+   	  height: 38px;
+   	  width: 372px;
+	  transition: width 0.6s ease-in-out;
+	  opacity: 0;
+
+
+	}
+	a:hover::after {
+	  opacity: 1;
+	  width: 0px;
+	  transition: width 0.6s ease-in-out; 
+	  
+	}*/ }
+  .mail a {
+    color: #80828A;
+    position: relative;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out; }
+    .mail a:hover {
+      text-decoration: none;
+      -webkit-transition: -webkit-transform 0.2s ease-in-out;
+      transition: -webkit-transform 0.2s ease-in-out;
+      -o-transition: transform 0.2s ease-in-out;
+      transition: transform 0.2s ease-in-out;
+      transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+      color: black; }
+      .mail a:hover::before {
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+        transform-origin: left; }
+    .mail a::before {
+      content: '';
+      position: absolute;
+      border-bottom: 3px solid black;
+      height: 38px;
+      width: 100%;
+      -webkit-transition: -webkit-transform 0.4s ease-in-out;
+      transition: -webkit-transform 0.4s ease-in-out;
+      -o-transition: transform 0.4s ease-in-out;
+      transition: transform 0.4s ease-in-out;
+      transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+      transform-origin: right; }
+
+h5 {
+  font-size: 2rem; }
+
+.logo h3 {
+  margin-top: 4rem;
+  cursor: pointer;
+  -webkit-animation: 10s multicolor infinite;
+  animation: 10s multicolor infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  opacity: 1;
+  -webkit-transition: all 0s ease-in-out;
+  -o-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  font-family: 'Oswald';
+  letter-spacing: 2px; }
+
+@-webkit-keyframes multicolor {
+  0% {
+    color: #478cff; }
+  20% {
+    color: #ff47d7; }
+  40% {
+    color: #088a12; }
+  60% {
+    color: #ff982d; }
+  80% {
+    color: #a90b95; }
+  100% {
+    color: #900000; } }
+
+@keyframes multicolor {
+  0% {
+    color: #478cff; }
+  20% {
+    color: #ff47d7; }
+  40% {
+    color: #088a12; }
+  60% {
+    color: #ff982d; }
+  80% {
+    color: #a90b95; }
+  100% {
+    color: #900000; } }
+
+/*@keyframes roll {
+			 0% {
+			    transform: rotate(0deg);
+			}
+			100% {
+			    transform: rotate(360deg);
+			}
+		}*/
+.p-fixed {
+  position: fixed;
+  z-index: 10; }
+
+.w-100 {
+  width: 100vw; }
+
+.links {
+  -webkit-transform: rotate(-90deg) translateX(-100%);
+  -ms-transform: rotate(-90deg) translateX(-100%);
+  transform: rotate(-90deg) translateX(-100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  font-size: 1rem;
+  margin-top: 14.5rem;
+  margin-left: 1rem; }
+
+.heading {
+  margin-top: 15rem; }
+  .heading h1 {
+    font-size: 14rem;
+    margin-top: -2rem;
+    font-weight: 600;
+    width: 100rem;
+    font-family: 'Oswald';
+    -webkit-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear; }
+  .heading h3 {
+    font-size: 10rem;
+    font-family: 'Oswald';
+    font-weight: 500; }
+  .heading h4 {
+    font-size: 2rem;
+    line-height: 1.5em; }
+  .heading img {
+    height: 50px;
+    width: auto;
+    -webkit-filter: brightness(108%);
+    filter: brightness(108%); }
+  .heading p {
+    font-size: 1.3rem; }
+
+.block {
+  margin-left: 6rem; }
+
+.pad {
+  margin-top: 8rem;
+  margin-bottom: 8rem; }
+  @media (max-width: 991px) {
+    .pad {
+      margin-top: 4rem;
+      margin-bottom: 4rem; } }
+
+.m-links {
+  padding: 4rem 0; }
+  .m-links a {
+    font-family: 'Oswald';
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #000; }
