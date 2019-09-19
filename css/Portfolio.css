@@ -187,7 +187,7 @@ h5 {
 .heading {
   margin-top: 15rem; }
   .heading h1 {
-    font-size: 14rem;
+    font-size: 12rem;
     margin-top: -2rem;
     font-weight: 600;
     width: 100rem;
@@ -200,7 +200,7 @@ h5 {
     font-family: 'Oswald';
     font-weight: 500; }
   .heading h4 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.5em; }
   .heading img {
     height: 50px;
